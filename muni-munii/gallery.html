@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuniMuni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header" style="background-image: url(about.png)">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="Logo" style="width: 150px;"></a>
+
+            <div class="nav-links" id="navlinks">
+                <ul>
+                    <br>
+                    <br>
+                    <li><a href="index.html" style="text-align: left;">Home</a></li>
+                    <li><a href="menu.html" style="text-align: left;">Menu</a></li>
+                    <li><a href="about.html" style="text-align: left;">About Us</a></li>
+                    <li><a href="contact.html" style="text-align: left;">Contact Us</a></li>
+                    <li><a href="events.html" style="text-align: left;">Events/News</a></li>
+                    <li><a href="gallery.html" style="text-align: left;">Gallery</a></li>
+                    <li><a href="reviews.html" style="text-align: left;">Reviews</a></li>
+                    <li><a href="blog.html" style="text-align: left; ">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-buttons-container">
+            <div class="menu-button" onclick="toggleMenu()">
+                <img id="menu-icon" src="1.png" alt="Menu Icon">
+            </div>
+        </div>
+    </section>
+ <br>
+	<br>
+    <div class="about-row">
+<h1>MENU ITEMS</h1>
+      <div id="slider">
+        <div id="slides">
+            <div class="slide"><img src="gallery/5.png" alt="Image 5" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/12.png" alt="Image 12" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/2.png" alt="Image 2" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/18.png" alt="Image 18" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/8.png" alt="Image 8" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/15.png" alt="Image 15" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/7.png" alt="Image 7" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/9.png" alt="Image 9" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/16.png" alt="Image 16" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/19.png" alt="Image 19" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/1.png" alt="Image 1" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/3.png" alt="Image 3" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/4.png" alt="Image 4" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/11.png" alt="Image 11" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/14.png" alt="Image 14" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/6.png" alt="Image 6" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/13.png" alt="Image 13" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/17.png" alt="Image 17" style="width: 500px;"></div>
+        <div class="slide"><img src="gallery/10.png" alt="Image 10" style="width: 500px;"></div>
+        </div>
+    </div>
+
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+    </div>
+
+	 <h2>Image gallery</h2>
+
+    <table>
+        <tr>
+            <td><img src="table/1.png" alt="Image 1"></td>
+            <td><img src="table/2.png" alt="Image 2"></td>
+            <td><img src="table/3.png" alt="Image 3"></td>
+        </tr>
+        <tr>
+            <td><img src="table/4.png" alt="Image 4"></td>
+            <td><img src="table/5.png" alt="Image 5"></td>
+            <td><img src="table/6.png" alt="Image 6"></td>
+        </tr>
+        <tr>
+            <td><img src="table/7.png" alt="Image 7"></td>
+            <td><img src="table/8.png" alt="Image 8"></td>
+            <td><img src="table/9.png" alt="Image 9"></td>
+        </tr>
+        <tr>
+            <td><img src="table/10.png" alt="Image 10"></td>
+            <td><img src="table/11.png" alt="Image 11"></td>
+            <td><img src="table/12.png" alt="Image 12"></td>
+        </tr>
+        <tr>
+            <td><img src="table/13.png" alt="Image 13"></td>
+            <td><img src="table/14.png" alt="Image 14"></td>
+            <td><img src="table/15.png" alt="Image 15"></td>
+        </tr>
+    </table>
+
+	
+	
+    <img src="home1.png" alt="Home Image" style="width: 100%; height: auto; display: block; margin: 0;">
+    <br>
+    <br>
+
+    <section class="footer">
+        <h3>ALL RIGHTS RESERVED @MUNI MUNI COFFEE BAR 2024.<br>Made by Jon Kristopher Mari Atanacio BM9</h3>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById('navlinks');
+        var menuIcon = document.getElementById('menu-icon');
+
+        function toggleMenu() {
+            if (navlinks.style.right === "0px") {
+                navlinks.style.right = "-200px";
+                menuIcon.src = "1.png"; // Change to the icon for showing the menu
+            } else {
+                navlinks.style.right = "0px";
+                menuIcon.src = "2.png"; // Change to the icon for hiding the menu
+            }
+        }
+		
+		   const slider = document.getElementById('slides');
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            const slideWidth = document.querySelector('.slide').offsetWidth;
+            slider.style.transform = `translateX(-${slideWidth * index}px)`;
+        }
+
+        function nextSlide() {
+            if (slideIndex < document.querySelectorAll('.slide').length - 1) {
+                slideIndex++;
+                showSlide(slideIndex);
+            }
+        }
+
+        function prevSlide() {
+            if (slideIndex > 0) {
+                slideIndex--;
+                showSlide(slideIndex);
+            }
+        }
+    </script>
+</body>
+</html>

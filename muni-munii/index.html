@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuniMuni</title>
+    <link rel="stylesheet" href="styles.css">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="logo.png" alt="Logo" style="width: 150px;"></a>
+<img src="gallery.gif" style="width: 100px;">
+        <div class="nav-links" id="navlinks">
+            <ul>
+<br>
+				<br>
+                <li><a href="index.html" style="text-align: left;">Home</a></li>
+                <li><a href="menu.html" style="text-align: left;">Menu</a></li>
+                <li><a href="about.html" style="text-align: left;">About Us</a></li>
+                <li><a href="contact.html" style="text-align: left;">Contact Us</a></li>
+                <li><a href="events.html" style="text-align: left;">Events/News</a></li>
+                <li><a href="gallery.html" style="text-align: left;">Gallery</a></li>
+                <li><a href="reviews.html" style="text-align: left;">Reviews</a></li>
+                <li><a href="blog.html" style="text-align: left; ">Blog</a></li>
+            </ul>
+        </div>
+        <a href="menu.html" class="hero-btn" style="width: 30px'">Our Menu</a>
+
+    </nav>
+
+    <div class="menu-buttons-container">
+        <div class="menu-button" onclick="toggleMenu()">
+            <img id="menu-icon" src="1.png" alt="Menu Icon">
+        </div>
+    </div>
+</section>
+ <section class="about"> 
+	<br>
+	<br>
+<div class="row">
+	
+<div class="about-row">
+    <h2>neighborhood cafe</h2>
+    <br>
+    <br>
+    <img src="3.png"  style="width: 500px;"alt="Neighborhood Cafe">
+</div>
+
+<div class="about-row">
+    <h2>Cowork</h2>
+    <br>
+    <br>
+    <img src="image.jpg"  style="width: 500px;"alt="Cowork">
+</div>
+
+<div class="about-row">
+    <h2>Community</h2>
+    <br>
+    <br>
+    <img src="4.png"  style="width: 500px;"alt="Community">
+</div>
+
+
+	 </div>
+
+<img src="home1.png">
+
+<br>
+<br>
+	</section>
+<img src="map.png" usemap="#image_map">
+<map name="image_map">
+  <area alt="" title="" href="https://www.instagram.com/munimunicoffeebar/" coords="40,151,261,366" shape="rect">
+  <area alt="" title="" href="https://www.facebook.com/munimunicoffeebar" coords="445,154,707,380" shape="rect">
+  <area alt="" title="" href="https://www.tiktok.com/@munimunicoffeebar" coords="857,155,1097,372" shape="rect">
+</map>
+<section class="footer">
+<h3>ALL RIGHTS RESERVED @MUNI MUNI COFFEE BAR 2024.<br>Made by Jon Kristopher Mari Atanacio BM9</h3>
+
+	</section>
+    <script>
+        var navlinks = document.getElementById('navlinks');
+        var menuIcon = document.getElementById('menu-icon');
+
+        function toggleMenu() {
+            if (navlinks.style.right === "0px") {
+                navlinks.style.right = "-200px";
+                menuIcon.src = "1.png"; // Change to the icon for showing the menu
+            } else {
+                navlinks.style.right = "0px";
+                menuIcon.src = "2.png"; // Change to the icon for hiding the menu
+            }
+        }
+    </script>
+</body>
+</html>

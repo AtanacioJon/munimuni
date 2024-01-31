@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuniMuni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header" style="background-image: url(amge1.jpg)">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="Logo" style="width: 150px;"></a>
+<img src="gallery.gif" style="width: 100px;">
+
+            <div class="nav-links" id="navlinks">
+                <ul>
+                    <br>
+                    <br>
+                    <li><a href="index.html" style="text-align: left;">Home</a></li>
+                    <li><a href="menu.html" style="text-align: left;">Menu</a></li>
+                    <li><a href="about.html" style="text-align: left;">About Us</a></li>
+                    <li><a href="contact.html" style="text-align: left;">Contact Us</a></li>
+                    <li><a href="events.html" style="text-align: left;">Events/News</a></li>
+                    <li><a href="gallery.html" style="text-align: left;">Gallery</a></li>
+                    <li><a href="reviews.html" style="text-align: left;">Reviews</a></li>
+                    <li><a href="blog.html" style="text-align: left; ">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-buttons-container">
+            <div class="menu-button" onclick="toggleMenu()">
+                <img id="menu-icon" src="1.png" alt="Menu Icon">
+            </div>
+        </div>
+    </section>
+ <br>
+	<br>
+<h1> BLOG POST</h1>
+    <div class="about-row">
+        <h2> OUR BACKGROUND</h2>
+        <br>
+<br>
+  <p>
+
+Nestled in the heart of Binan, Muni Muni Coffee Bar is not just a coffee shop; it's a sanctuary where the aroma of freshly brewed coffee mingles with the tranquility of a cozy ambiance. Our expanded location, one floor up from our cherished oldie but goodie store, welcomes you to an elevated experience of good coffee, good vibes, and finally, good food. <br><br>The space is adorned with a soothing green, gray, and white motif, creating the perfect backdrop for moments of relaxation, work, or shared conversations. Led by our visionary founder, Kei San Pablo-Mercado, our commitment goes beyond serving exceptional coffee – it extends to fostering sustainability, promoting eco-friendliness, and ensuring your utmost satisfaction. As you step into Muni Muni Coffee Bar, let every sip tell a story, and every moment spent within our walls become a cherished memory. Join us on this journey where the love for coffee meets the art of creating meaningful experiences.        <br>
+    </div>
+	    <div class="about-row">
+        <h2> OUR SUISTAINABILTY GOALS</h2>
+        <br>
+<br>
+  <p>
+At Muni Muni Coffee Bar, sustainability is at the core of our mission. Committed to reducing our environmental footprint, we've set ambitious goals to embrace eco-friendly practices throughout our operations. From the use of compostable cups sourced from environmentally conscious suppliers to minimizing single-use plastics, we strive to lead the way in promoting sustainability in the coffee industry. Additionally, we're dedicated to supporting local and sustainable sourcing for our coffee beans, ensuring that every cup reflects our commitment to both quality and environmental responsibility. Join us on our journey towards a greener future, where every sip at Muni Muni contributes to a more sustainable and mindful world.</p>
+        <br>
+    </div>
+	<hr>
+	<hr>
+  
+
+
+	
+	
+	
+	
+	
+    <img src="home1.png" alt="Home Image" style="width: 100%; height: auto; display: block; margin: 0;">
+    <br>
+    <br>
+
+    <section class="footer">
+        <h3>ALL RIGHTS RESERVED @MUNI MUNI COFFEE BAR 2024.<br>Made by Jon Kristopher Mari Atanacio BM9</h3>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById('navlinks');
+        var menuIcon = document.getElementById('menu-icon');
+
+        function toggleMenu() {
+            if (navlinks.style.right === "0px") {
+                navlinks.style.right = "-200px";
+                menuIcon.src = "1.png"; // Change to the icon for showing the menu
+            } else {
+                navlinks.style.right = "0px";
+                menuIcon.src = "2.png"; // Change to the icon for hiding the menu
+            }
+        }
+    </script>
+</body>
+</html>

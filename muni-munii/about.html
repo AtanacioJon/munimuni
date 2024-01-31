@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuniMuni</title>
+    <link rel="stylesheet" href="styles.css">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+
+</head>
+<body>
+<section class="header" style="background-image: url(menu1.png)">
+    <nav>
+        <a href="index.html"><img src="logo.png" alt="Logo" style="width: 150px;"></a>
+<img src="gallery.gif" style="width: 100px;">
+
+        <div class="nav-links" id="navlinks">
+            <ul>
+<br>
+				<br>
+                <li><a href="index.html" style="text-align: left;">Home</a></li>
+                <li><a href="menu.html" style="text-align: left;">Menu</a></li>
+                <li><a href="about.html" style="text-align: left;">About Us</a></li>
+                <li><a href="contact.html" style="text-align: left;">Contact Us</a></li>
+                <li><a href="events.html" style="text-align: left;">Events/News</a></li>
+                <li><a href="gallery.html" style="text-align: left;">Gallery</a></li>
+                <li><a href="reviews.html" style="text-align: left;">Reviews</a></li>
+                <li><a href="blog.html" style="text-align: left; ">Blog</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="menu-buttons-container">
+        <div class="menu-button" onclick="toggleMenu()">
+            <img id="menu-icon" src="1.png" alt="Menu Icon">
+        </div>
+    </div>
+</section>
+    
+
+ <section class="about"> 
+	<br>
+	<br>
+
+
+<div class="row" style="flex-direction: column;" >
+<br>
+    <div class="about-row">
+<h2>OUR STORY</h2>
+
+     <p class="about-p" style="font-size: 30px; text-align: center;"> Welcome to Muni Muni Coffee Bar, where the art of coffee meets sustainability, and every cup is crafted with passion. 
+<br>
+<br> Muni Muni is not just a coffee shop; it's a haven for those seeking a tranquil escape in the heart of Binan.With a commitment to consistency and quality at an affordable price range, we offer a no-hassle service, making your coffee and food experience efficient and enjoyable. <br><br>In a world dominated by drive-thrus and takeaways, Muni Muni provides a sanctuary for those who wish to sit, slow down, and savor the moment.</p>
+
+
+    </div>
+
+<div class="about-row">
+    <h2> How it started</h2>
+    <br>
+    <p class="about-p" >Owning a small specialty coffee shop has always been part of my 5-10 year retirement plan. I enjoy visiting and trying out local cafes, especially when traveling abroad. But because of the pandemic, cafe visits became drive-thrus and takeaways. <br><br>When I chanced upon an up-and-coming commercial area in Binan Laguna, I got inspired to open a coffee shop and offer a sit-down, grab-a-book, and slowdown local cafe experience.</p>
+    <br>
+    <p style="text-align: right; font-size: 15px;"> - Kei San Pablo-Mercado</p>
+</div>
+<div class="about-row">
+    <h2> How it is going</h2>
+    <br>
+    <p class="about-p" >Embark on a heightened experience at Muni Muni Coffee Bar's expanded location, just one floor up from our beloved oldie but goodie store. Revel in the soothing ambiance of our updated interiors, adorned with the familiar green, gray, and white motif, creating the perfect backdrop for your coffee ritual.<br>
+        <br>Our baristas continue to craft each cup with precision, ensuring a symphony of flavors that captivates the senses and food that fills your soul. </p>
+    <br>
+</div>
+<div class="about-row">
+    <h2> Target Audience</h2>
+    <br>
+    <p class="about-p" >EMuni-Muni Coffee Bar believes that the best way to start your day is with a nice cup of coffee. The cafe is open as early as 7 AM to cater to their target audience, which are cyclists, joggers, or simply those customers who just want to grab some good and easy-to-eat food while on their way to work.</p>
+    <br>
+</div>
+
+	 </div>
+
+<img  src="home1.png">
+
+<br>
+<br>
+	</section>
+
+<section class="footer">
+<h3>ALL RIGHTS RESERVED @MUNI MUNI COFFEE BAR 2024.<br>Made by Jon Kristopher Mari Atanacio BM9</h3>
+
+	</section>
+    <script>
+        var navlinks = document.getElementById('navlinks');
+        var menuIcon = document.getElementById('menu-icon');
+
+        function toggleMenu() {
+            if (navlinks.style.right === "0px") {
+                navlinks.style.right = "-200px";
+                menuIcon.src = "1.png"; // Change to the icon for showing the menu
+            } else {
+                navlinks.style.right = "0px";
+                menuIcon.src = "2.png"; // Change to the icon for hiding the menu
+            }
+        }
+    </script>
+</body>
+</html>

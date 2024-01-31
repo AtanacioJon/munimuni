@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuniMuni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header" style="background-image: url(contact.png)">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="Logo" style="width: 150px;"></a>
+<img src="gallery.gif" style="width: 100px;">
+
+            <div class="nav-links" id="navlinks">
+                <ul>
+                    <br>
+                    <br>
+                    <li><a href="index.html" style="text-align: left;">Home</a></li>
+                    <li><a href="menu.html" style="text-align: left;">Menu</a></li>
+                    <li><a href="about.html" style="text-align: left;">About Us</a></li>
+                    <li><a href="contact.html" style="text-align: left;">Contact Us</a></li>
+                    <li><a href="events.html" style="text-align: left;">Events/News</a></li>
+                    <li><a href="gallery.html" style="text-align: left;">Gallery</a></li>
+                    <li><a href="reviews.html" style="text-align: left;">Reviews</a></li>
+                    <li><a href="blog.html" style="text-align: left; ">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-buttons-container">
+            <div class="menu-button" onclick="toggleMenu()">
+                <img id="menu-icon" src="1.png" alt="Menu Icon">
+            </div>
+        </div>
+    </section>
+ <br>
+	<br>
+
+
+  <section class="about"> 
+
+	<br>
+	<br>
+<div class="row">
+	
+<div class="about-row">
+    <h2> Contact Us</h2>
+    <br>
+    <br>
+    <form action="/submit_contact_form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	</div>
+
+<div class="about-row">
+
+    <h2>Our socials</h2>
+    <br>
+    <br>
+    <div class="social-links">
+        <a href="https://www.instagram.com/munimunicoffeebar/" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+		<br><br>
+
+        <a href="https://www.facebook.com/munimunicoffeebar" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>		<br>
+<br>
+
+        <a href="https://www.tiktok.com/@munimunicoffeebar" target="_blank">
+            <img src="tiktok.png" alt="TikTok">
+        </a>		<br>
+<br>
+
+    </div>
+<br>
+<br>
+	 <h2>Join our team</h2>
+      <p>We're always looking for talented individuals to join our team.</p>
+<br>
+
+
+
+
+</div>
+
+<div class="about-row">
+    <div class="about-row">
+        <div>
+            <h2>Our Location</h2>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.750913123832!2d121.08391510901622!3d14.325896086070658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d9f6d1612625%3A0xac3b4d544a1415c7!2sMuni%20Muni%20Coffee%20Bar!5e0!3m2!1sen!2sph!4v1706727286875!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+	 </div>
+
+	
+	
+	</section>
+	
+	
+	
+    <img src="home1.png" alt="Home Image" style="width: 100%; height: auto; display: block; margin: 0;">
+    <br>
+    <br>
+
+    <section class="footer">
+        <h3>ALL RIGHTS RESERVED @MUNI MUNI COFFEE BAR 2024.<br>Made by Jon Kristopher Mari Atanacio BM9</h3>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById('navlinks');
+        var menuIcon = document.getElementById('menu-icon');
+
+        function toggleMenu() {
+            if (navlinks.style.right === "0px") {
+                navlinks.style.right = "-200px";
+                menuIcon.src = "1.png"; // Change to the icon for showing the menu
+            } else {
+                navlinks.style.right = "0px";
+                menuIcon.src = "2.png"; // Change to the icon for hiding the menu
+            }
+        }
+    </script>
+</body>
+</html>
